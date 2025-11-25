@@ -13,7 +13,7 @@ interface CameraPreviewProps {
   isLoading: boolean
 }
 
-export function CameraPreview({ className, videoRef, stream, error, isLoading }: CameraPreviewProps) {
+export function CameraPreview({ className, videoRef, error, isLoading }: CameraPreviewProps) {
   const { editState } = usePhotoboothStore()
   
   const filterStyle = {

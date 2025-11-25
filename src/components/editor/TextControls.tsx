@@ -1,21 +1,11 @@
-import React from 'react'
+
 import { usePhotoboothStore } from '@/store/usePhotoboothStore'
-import { Input } from '@/components/ui/input' // Need to install input
+
 import { Label } from '@/components/ui/label'
-import { Slider } from '@/components/ui/slider'
+
 import { Type } from 'lucide-react'
 
-const FONTS = [
-  { name: 'Sans', value: 'var(--font-body)' },
-  { name: 'Display', value: 'var(--font-display)' },
-  { name: 'Serif', value: 'serif' },
-  { name: 'Mono', value: 'monospace' },
-  { name: 'Cursive', value: 'cursive' },
-]
 
-const COLORS = [
-  '#ffffff', '#000000', '#ef4444', '#3b82f6', '#22c55e', '#eab308', '#a855f7'
-]
 
 export function TextControls() {
   const { editState, updateEditState } = usePhotoboothStore()
